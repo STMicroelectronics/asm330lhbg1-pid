@@ -30,15 +30,28 @@ This directory contains the ASM330LHBG1 component drivers.
 # Update history
 
 ::: {.collapse}
-<input type="checkbox" id="collapse-section1" checked aria-hidden="true">
+<input type="checkbox" id="collapse-section1" aria-hidden="true">
 <label for="collapse-section1" aria-hidden="true">V1.0.0 / 11-Apr-2024</label>
-<div>			
+<div>
 
 ## Main changes
 
 ### First release
 
 - First official release [ref. DS v1.0 (29-Nov-2023)]
+
+##
+</div>
+
+<input type="checkbox" id="collapse-section2" checked aria-hidden="true">
+<label for="collapse-section2" aria-hidden="true">V1.1.0 / 18-Dec-2024</label>
+<div>
+
+## Main changes
+
+- Read always both FIFO_STATUS1 and FIFO_STATUS2 regs
+- Align asm330lh software compatible drivers
+- Fix fifo_watermark_set() API
 
 ##
 </div>
