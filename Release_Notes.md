@@ -43,7 +43,7 @@ This directory contains the ASM330LHBG1 component drivers.
 ##
 </div>
 
-<input type="checkbox" id="collapse-section2" checked aria-hidden="true">
+<input type="checkbox" id="collapse-section2" aria-hidden="true">
 <label for="collapse-section2" aria-hidden="true">V1.1.0 / 18-Dec-2024</label>
 <div>
 
@@ -52,6 +52,18 @@ This directory contains the ASM330LHBG1 component drivers.
 - Read always both FIFO_STATUS1 and FIFO_STATUS2 regs
 - Align asm330lh software compatible drivers
 - Fix fifo_watermark_set() API
+
+##
+</div>
+
+<input type="checkbox" id="collapse-section3" checked aria-hidden="true">
+<label for="collapse-section3" aria-hidden="true">V1.2.0 / 07-Jul-2025</label>
+<div>
+
+## Main changes
+
+- Fix driver formatting options
+- Added pointer to private data in stmdev_ctx_t
 
 ##
 </div>
