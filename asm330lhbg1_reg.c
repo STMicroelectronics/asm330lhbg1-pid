@@ -2483,7 +2483,7 @@ int32_t asm330lhbg1_gy_filter_lp1_get(const stmdev_ctx_t *ctx, uint8_t *val)
   * @retval        Interface status (MANDATORY: return 0 -> no Error).
   *
   */
-int32_t asm330lhbg1_filter_settling_mask_set(const stmdev_ctx_t *ctx, uint8_t val)
+int32_t asm330lhbg1_drdy_mask_set(const stmdev_ctx_t *ctx, uint8_t val)
 {
   asm330lhbg1_ctrl4_c_t ctrl4_c;
   int32_t ret;
@@ -2506,8 +2506,7 @@ int32_t asm330lhbg1_filter_settling_mask_set(const stmdev_ctx_t *ctx, uint8_t va
   * @retval        Interface status (MANDATORY: return 0 -> no Error).
   *
   */
-int32_t asm330lhbg1_filter_settling_mask_get(const stmdev_ctx_t *ctx,
-                                             uint8_t *val)
+int32_t asm330lhbg1_drdy_mask_get(const stmdev_ctx_t *ctx, uint8_t *val)
 {
   asm330lhbg1_ctrl4_c_t ctrl4_c;
   int32_t ret;
