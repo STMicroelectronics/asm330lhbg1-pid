@@ -6607,11 +6607,6 @@ int32_t asm330lhbg1_fsm_number_of_programs_set(const stmdev_ctx_t *ctx, uint8_t 
 
   ret = asm330lhbg1_ln_pg_write_byte(ctx, ASM330LHBG1_FSM_PROGRAMS, buff);
 
-  if (ret == 0)
-  {
-    ret = asm330lhbg1_ln_pg_write_byte(ctx, ASM330LHBG1_FSM_PROGRAMS + 0x01U,
-                                       buff);
-  }
   return ret;
 }
 
