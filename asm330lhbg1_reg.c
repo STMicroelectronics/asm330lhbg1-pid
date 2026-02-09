@@ -6147,16 +6147,13 @@ int32_t asm330lhbg1_emb_fsm_en_get(const stmdev_ctx_t *ctx, uint8_t *val)
   asm330lhbg1_emb_func_en_b_t emb_func_en_b;
 
   ret = asm330lhbg1_mem_bank_set(ctx, ASM330LHBG1_EMBEDDED_FUNC_BANK);
+
   if (ret == 0)
   {
     ret = asm330lhbg1_read_reg(ctx, ASM330LHBG1_EMB_FUNC_EN_B,
                                (uint8_t *)&emb_func_en_b, 1);
-  }
-  if (ret == 0)
-  {
+
     *val = emb_func_en_b.fsm_en;
-    ret = asm330lhbg1_write_reg(ctx, ASM330LHBG1_EMB_FUNC_EN_B,
-                                (uint8_t *)&emb_func_en_b, 1);
   }
 
   ret += asm330lhbg1_mem_bank_set(ctx, ASM330LHBG1_USER_BANK);
