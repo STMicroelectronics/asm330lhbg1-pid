@@ -1652,7 +1652,7 @@ typedef enum
   ASM330LHBG1_HP_ODR_DIV_400            = 0x16,
   ASM330LHBG1_HP_ODR_DIV_800            = 0x17,
   ASM330LHBG1_LP_ODR_DIV_2              = 0x01,
-  ASM330LHBG1_LP_ODR_DIV_4              = 0x00,
+  ASM330LHBG1_LP_ODR_DIV_4              = 0x80,
   ASM330LHBG1_LP_ODR_DIV_10             = 0x81,
   ASM330LHBG1_LP_ODR_DIV_20             = 0x82,
   ASM330LHBG1_LP_ODR_DIV_45             = 0x83,
