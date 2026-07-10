@@ -259,9 +259,9 @@ int32_t asm330lhbg1_xl_data_rate_set(const stmdev_ctx_t *ctx,
 {
   asm330lhbg1_odr_xl_t odr_xl =  val;
   asm330lhbg1_emb_fsm_enable_t fsm_enable = {0};
-  asm330lhbg1_fsm_odr_t fsm_odr = {0};
+  asm330lhbg1_fsm_odr_t fsm_odr = ASM330LHBG1_ODR_FSM_12Hz5;
   uint8_t mlc_enable = 0;
-  asm330lhbg1_mlc_odr_t mlc_odr = {0};
+  asm330lhbg1_mlc_odr_t mlc_odr = ASM330LHBG1_ODR_PRGS_12Hz5;
   asm330lhbg1_ctrl1_xl_t ctrl1_xl = {0};
   int32_t ret = 0;
 
@@ -642,9 +642,9 @@ int32_t asm330lhbg1_gy_data_rate_set(const stmdev_ctx_t *ctx,
 {
   asm330lhbg1_odr_g_t odr_gy =  val;
   asm330lhbg1_emb_fsm_enable_t fsm_enable = {0};
-  asm330lhbg1_fsm_odr_t fsm_odr = {0};
+  asm330lhbg1_fsm_odr_t fsm_odr = ASM330LHBG1_ODR_FSM_12Hz5;
   uint8_t mlc_enable = {0};
-  asm330lhbg1_mlc_odr_t mlc_odr = {0};
+  asm330lhbg1_mlc_odr_t mlc_odr = ASM330LHBG1_ODR_PRGS_12Hz5;
   asm330lhbg1_ctrl2_g_t ctrl2_g = {0};
   int32_t ret = 0;
 
